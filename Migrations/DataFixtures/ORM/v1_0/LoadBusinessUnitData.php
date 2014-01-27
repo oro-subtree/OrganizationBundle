@@ -1,5 +1,5 @@
 <?php
-namespace Oro\Bundle\OrganizationBundle\DataFixtures\Migrations\ORM\v1_0;
+namespace Oro\Bundle\OrganizationBundle\Migrations\DataFixtures\ORM\v1_0;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -14,7 +14,7 @@ class LoadBusinessUnitData extends AbstractFixture implements DependentFixtureIn
      */
     public function getDependencies()
     {
-        return ['Oro\Bundle\OrganizationBundle\DataFixtures\Migrations\ORM\v1_0\LoadOrganizationData'];
+        return ['Oro\Bundle\OrganizationBundle\Migrations\DataFixtures\ORM\v1_0\LoadOrganizationData'];
     }
 
     public function load(ObjectManager $manager)

@@ -1,4 +1,4 @@
-datagrid:
+datagrids:
     business-unit-grid:
         extended_entity_name: %oro_organization.business_unit.entity.class%
         options:
